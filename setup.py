@@ -1,9 +1,9 @@
 from setuptools import find_packages,setup
-
+from typing import List
 
 
 HYPEN_E_DOT = '-e .'
-def get_requirements(file_path:SyntaxWarning)->list[str]:
+def get_requirements(file_path:str)->List[str]:
     '''
     This function will return the list of requirements
     '''
@@ -18,7 +18,7 @@ def get_requirements(file_path:SyntaxWarning)->list[str]:
 
 setup(
 name='mlproject',
-version = '0.0.1',
+version = '0.0.5',
 author = 'Ariva Syam',
 author_email='arivasyamm@gmail.com',
 packages=find_packages(),
